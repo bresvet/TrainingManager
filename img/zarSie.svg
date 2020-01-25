@@ -1,0 +1,37 @@
+<svg id="zarSie" xmlns="http://www.w3.org/2000/svg" width="148" height="48" viewBox="0 0 148 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+        stroke: #647984;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #647984;
+        font-size: 17px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_74_3" data-name="Symbol 74 – 3">
+    <g id="Component">
+      <g id="Group_367" data-name="Group 367">
+        <g id="Rectangle_1091" data-name="Rectangle 1091" class="cls-1">
+          <rect class="cls-3" width="148" height="48" rx="4"/>
+          <rect class="cls-4" x="1" y="1" width="146" height="46" rx="3"/>
+        </g>
+      </g>
+      <text id="Zarejstruj_się" data-name="Zarejstruj się" class="cls-2" transform="translate(74 28)"><tspan x="-52.913" y="0">Zarejstruj się</tspan></text>
+    </g>
+  </g>
+</svg>

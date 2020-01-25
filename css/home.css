@@ -1,0 +1,9 @@
+.reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation > a > img {
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+<svg id="zarezerwuj" xmlns="http://www.w3.org/2000/svg" width="557" height="238" viewBox="0 0 557 238">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #dedede;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 60px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Button_CTA" data-name="Button CTA" class="cls-1">
+    <g id="Component_35_1" data-name="Component 35 – 1">
+      <rect id="Rectangle_1090" data-name="Rectangle 1090" class="cls-2" width="557" height="238" rx="33"/>
+    </g>
+  </g>
+  <path id="dumbbell-solid" class="cls-3" d="M29.891,53.352H16.1c-3.823,0-6.9,3.57-6.9,8.007v34.7H2.3A2.512,2.512,0,0,0,0,98.725v16.014a2.512,2.512,0,0,0,2.3,2.669H9.2v34.7c0,4.437,3.075,8.007,6.9,8.007h13.8c3.823,0,6.9-3.57,6.9-8.007V61.359C36.789,56.922,33.714,53.352,29.891,53.352Zm151.756,42.7h-6.9v-34.7c0-4.437-3.075-8.007-6.9-8.007h-13.8c-3.823,0-6.9,3.57-6.9,8.007v90.746c0,4.437,3.075,8.007,6.9,8.007h13.8c3.823,0,6.9-3.57,6.9-8.007v-34.7h6.9a2.512,2.512,0,0,0,2.3-2.669V98.725A2.512,2.512,0,0,0,181.647,96.056ZM131.062,32h-13.8c-3.823,0-6.9,3.57-6.9,8.007V96.056H73.579V40.007c0-4.437-3.075-8.007-6.9-8.007h-13.8c-3.823,0-6.9,3.57-6.9,8.007V173.458c0,4.437,3.075,8.007,6.9,8.007h13.8c3.823,0,6.9-3.57,6.9-8.007V117.408h36.789v56.049c0,4.437,3.075,8.007,6.9,8.007h13.8c3.823,0,6.9-3.57,6.9-8.007V40.007C137.96,35.57,134.885,32,131.062,32Z" transform="translate(348.183 12.326)"/>
+  <text id="Zapisz_się_" data-name="Zapisz się!" class="cls-4" transform="translate(173 139.199)"><tspan x="-153.384" y="0">Zapisz się!</tspan></text>
+</svg>
