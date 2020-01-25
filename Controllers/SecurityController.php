@@ -17,12 +17,12 @@ class SecurityController extends AppController {
             $user = $userRepository->getUser($email);
 
             if (!$user) {
-                $this->render('login', ['messages' => ['User with this email not exist!']]);
+                $this->render('login');
                 return;
             }
 
             if ($user->getPassword() !== $password) {
-                $this->render('login', ['messages' => ['Wrong password!']]);
+                $this->render('login');
                 return;
             }
 
@@ -56,10 +56,17 @@ class SecurityController extends AppController {
 
 
             $url = "http://$_SERVER[HTTP_HOST]/";
-            header("Location: {$url}?page=login");
+            header("Location: {$url}?page=home");
         }
 
         $this->render('registration');
+    }
+
+    public function logout()
+    {
+        session_unset();
+        session_destroy();
+        $this->render('logout');
     }
 }
 ?>

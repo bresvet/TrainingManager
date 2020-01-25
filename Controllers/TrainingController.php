@@ -32,7 +32,7 @@ class TrainingController extends AppController {
             $loggedID = $_SESSION["id"];
 
             $trainRespository = new TrainingRepository();
-            $this->render('activities', ['results' =>$trainRespository->getYourTrainings($loggedID)]);
+            $this->render('trainings', ['results' =>$trainRespository->getYourTrainings($loggedID)]);
             return;
         }
 

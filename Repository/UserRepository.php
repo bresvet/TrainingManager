@@ -61,6 +61,14 @@ class UserRepository extends Repository
         $stmt->execute();
     }
 
+    public function deleteuser(int $idUser)
+    {
+        $stmt = $this->database->connect()->prepare("
+            DELETE FROM user WHERE id_user = '$idUser'
+        ");
+        $stmt->execute();
+    }
+
     public function loggedUser(int $id): ?User
     {
         $stmt = $this->database->connect()->prepare("

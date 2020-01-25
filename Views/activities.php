@@ -15,6 +15,7 @@ if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
 </head>
 <body>
 <div class="container">
+    <a href="?page=logout"> wyloguj się</a>
     <div>
         <?php
         if(isset($results)){

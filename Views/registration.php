@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <link rel="Stylesheet" type="text/css" href="../css/login.css">
     <link rel="Stylesheet" type="text/css" href="../css/background.css">
-    <title>Login</title>
+    <title>Rejestracja</title>
 </head>
 <body>
 

@@ -3,10 +3,11 @@
     <meta charset="UTF-8">
     <link rel="Stylesheet" type="text/css" href="../css/login.css">
     <link rel="Stylesheet" type="text/css" href="../css/background.css">
-    <title>Login</title>
+    <title>Home</title>
 </head>
 <body>
     <div class="container">
+        <a href="?page=logout"> wyloguj się</a>
         <form>
             <?php
                 if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {

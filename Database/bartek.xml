@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3308
+- Czas generowania: 25 Sty 2020, 18:52
+- Wersja serwera: 8.0.18
+- Wersja PHP: 7.3.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="bartek" collation="utf8mb4_0900_ai_ci" charset="utf8mb4">
+            <pma:table name="activity">
+                CREATE TABLE `activity` (
+                  `id_activity` int(11) NOT NULL AUTO_INCREMENT,
+                  `date` date NOT NULL,
+                  `type` text NOT NULL,
+                  `id_gym` int(11) NOT NULL,
+                  `id_trainer` int(11) NOT NULL,
+                  PRIMARY KEY (`id_activity`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+            <pma:table name="address">
+                CREATE TABLE `address` (
+                  `id_address` int(11) NOT NULL AUTO_INCREMENT,
+                  `city` text NOT NULL,
+                  `street` text NOT NULL,
+                  `code` text NOT NULL,
+                  PRIMARY KEY (`id_address`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+            <pma:table name="gym">
+                CREATE TABLE `gym` (
+                  `id_gym` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` text NOT NULL,
+                  `id_address` int(11) NOT NULL,
+                  PRIMARY KEY (`id_gym`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+            <pma:table name="trainer">
+                CREATE TABLE `trainer` (
+                  `id_trainer` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` text NOT NULL,
+                  `surname` text NOT NULL,
+                  PRIMARY KEY (`id_trainer`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+            <pma:table name="training">
+                CREATE TABLE `training` (
+                  `id_training` int(11) NOT NULL AUTO_INCREMENT,
+                  `id_user` int(11) NOT NULL,
+                  `id_activity` int(11) NOT NULL,
+                  PRIMARY KEY (`id_training`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` text NOT NULL,
+                  `surname` text NOT NULL,
+                  `email` text NOT NULL,
+                  `password` text NOT NULL,
+                  `role` text NOT NULL,
+                  PRIMARY KEY (`id_user`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Baza danych: 'bartek'
+    -->
+    <database name="bartek">
+        <!-- Tabela activity -->
+        <table name="activity">
+            <column name="id_activity">1</column>
+            <column name="date">2020-01-31</column>
+            <column name="type">Push</column>
+            <column name="id_gym">1</column>
+            <column name="id_trainer">1</column>
+        </table>
+        <table name="activity">
+            <column name="id_activity">2</column>
+            <column name="date">2020-02-20</column>
+            <column name="type">ABS</column>
+            <column name="id_gym">2</column>
+            <column name="id_trainer">3</column>
+        </table>
+        <table name="activity">
+            <column name="id_activity">3</column>
+            <column name="date">2020-01-22</column>
+            <column name="type">Pull</column>
+            <column name="id_gym">3</column>
+            <column name="id_trainer">3</column>
+        </table>
+        <!-- Tabela address -->
+        <table name="address">
+            <column name="id_address">1</column>
+            <column name="city">Kraków</column>
+            <column name="street">Bratysławska 4</column>
+            <column name="code">31-201</column>
+        </table>
+        <table name="address">
+            <column name="id_address">2</column>
+            <column name="city">Kraków</column>
+            <column name="street">Aleja Pokoju 16</column>
+            <column name="code">31-564</column>
+        </table>
+        <table name="address">
+            <column name="id_address">3</column>
+            <column name="city">Kraków</column>
+            <column name="street">Stawowa 61</column>
+            <column name="code">31-464</column>
+        </table>
+        <table name="address">
+            <column name="id_address">4</column>
+            <column name="city">Poznań</column>
+            <column name="street">Bonusa 12</column>
+            <column name="code">54-098</column>
+        </table>
+        <!-- Tabela gym -->
+        <table name="gym">
+            <column name="id_gym">1</column>
+            <column name="name">Platinium Bratysławska</column>
+            <column name="id_address">1</column>
+        </table>
+        <table name="gym">
+            <column name="id_gym">2</column>
+            <column name="name">Platinium Aleja Pokoju</column>
+            <column name="id_address">2</column>
+        </table>
+        <table name="gym">
+            <column name="id_gym">3</column>
+            <column name="name">Platinium Bronowice</column>
+            <column name="id_address">3</column>
+        </table>
+        <table name="gym">
+            <column name="id_gym">4</column>
+            <column name="name">Poznań Dworzec</column>
+            <column name="id_address">4</column>
+        </table>
+        <!-- Tabela trainer -->
+        <table name="trainer">
+            <column name="id_trainer">1</column>
+            <column name="name">Milka</column>
+            <column name="surname">Gymfreak</column>
+        </table>
+        <table name="trainer">
+            <column name="id_trainer">2</column>
+            <column name="name">Filip</column>
+            <column name="surname">Witek</column>
+        </table>
+        <table name="trainer">
+            <column name="id_trainer">3</column>
+            <column name="name">Bartłomiej</column>
+            <column name="surname">Światłoń</column>
+        </table>
+        <!-- Tabela training -->
+        <table name="training">
+            <column name="id_training">52</column>
+            <column name="id_user">6</column>
+            <column name="id_activity">3</column>
+        </table>
+        <table name="training">
+            <column name="id_training">51</column>
+            <column name="id_user">6</column>
+            <column name="id_activity">2</column>
+        </table>
+        <table name="training">
+            <column name="id_training">50</column>
+            <column name="id_user">2</column>
+            <column name="id_activity">3</column>
+        </table>
+        <table name="training">
+            <column name="id_training">49</column>
+            <column name="id_user">2</column>
+            <column name="id_activity">2</column>
+        </table>
+        <!-- Tabela user -->
+        <table name="user">
+            <column name="id_user">5</column>
+            <column name="name">Julka</column>
+            <column name="surname">Sałek</column>
+            <column name="email"></column>
+            <column name="password"></column>
+            <column name="role">ROLE_USER</column>
+        </table>
+        <table name="user">
+            <column name="id_user">3</column>
+            <column name="name">Admin</column>
+            <column name="surname">ADMIN</column>
+            <column name="email">admin@pk.pl</column>
+            <column name="password">admin</column>
+            <column name="role">ROLE_ADMIN</column>
+        </table>
+    </database>
+</pma_xml_export>

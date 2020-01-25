@@ -3,6 +3,7 @@
 require_once 'Controllers\SecurityController.php';
 require_once 'Controllers\HomeController.php';
 require_once 'Controllers\TrainingController.php';
+require_once 'Controllers\AdminController.php';
 
 
 class Routing {
@@ -34,6 +35,18 @@ class Routing {
             'trainings' => [
                 'controller' => 'TrainingController',
                 'action' => 'yourtrainings'
+            ],
+            'logout' => [
+                'controller' => 'SecurityController',
+                'action' => 'logout'
+            ],
+            'admin' => [
+                'controller' => 'AdminController',
+                'action' => 'admin'
+            ],
+            'userdeleted' => [
+                'controller' => 'AdminController',
+                'action' => 'userdeleted'
             ]
 
 

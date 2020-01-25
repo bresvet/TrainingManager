@@ -8,11 +8,13 @@ if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
         <meta charset="UTF-8">
     <link rel="Stylesheet" type="text/css" href="../css/background.css"/>
     <link rel="Stylesheet" type="text/css" href="../css/resultbox.css"/>
-        <title>Wyszukiwanie</title>
+    <link rel="Stylesheet" type="text/css" href="../css/activity.css"/>
+        <title>Treningi</title>
     </head>
     <body>
     <div class="container">
-        <div class="resultsbox">
+        <a href="?page=logout"> wyloguj się</a>
+
             <a>TWOJE TRENINGI:</a>
             <?php
             if(isset($results)){
@@ -23,7 +25,7 @@ if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
                     $date = $current->getDate();
                     $gymname = $current->getGym()->getName();
                     $trainer = $current->getTrainer()->getName() . $current->getTrainer()->getSurname();
-                    echo "<div class=\"result\">
+                    echo "<div class=\"resultsbox\">
                                <div class='list'>Miejsce: $gymname</div>
                                <div class='list'>Typ: $type</div>
                                <div class='list'>Data: $date</div>
@@ -33,7 +35,7 @@ if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
                 echo "</ul>";
             }
             ?>
-        </div>
+
     </div>
 </body>
 </html>

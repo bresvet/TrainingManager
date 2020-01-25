@@ -10,7 +10,7 @@ class HomeController extends AppController {
         if (isset($_SESSION["id"])) {
             $loggedID = $_SESSION["id"];
             $name = $userRepository->loggedUser($loggedID)->getName();
-            $this->render('home', ['messages' => ['Zalogowany jako '.$name]]);
+            $this->render('home');
             return;
         }
 
